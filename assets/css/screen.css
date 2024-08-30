@@ -66,6 +66,8 @@ production stylesheet in assets/built/screen.css
     --font-serif: "EB Garamond", Georgia, Times, serif;
     --font-serif-alt: Georgia, Times, serif;
     --font-mono: "JetBrains Mono", Menlo, Consolas, Monaco, "Liberation Mono", "Lucida Console", monospace;
+    --font-display: "Messer", sans-serif;
+    --font-body: "Suisse Intl", sans-serif;
     --container-width: 1320px;
     --container-gap: clamp(24px, 1.7032rem + 1.9355vw, 48px);
     --grid-gap: 42px;
@@ -87,6 +89,175 @@ production stylesheet in assets/built/screen.css
 
 /* 3. Resets
 /* ---------------------------------------------------------- */
+
+@font-face {
+    font-family: "Messer";
+    src: url("../fonts/hinted-messerV20-condensed.woff2") format("woff2"),
+      url("../fonts/hinted-messerV20-condensed.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Suisse Intl";
+    src: url("../fonts/hinted-SuisseIntl-Bold.woff2") format("woff2"),
+      url("../fonts/hinted-SuisseIntl-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Suisse Intl";
+    src: url("../fonts/hinted-SuisseIntl-Black.woff2") format("woff2"),
+      url("../fonts/hinted-SuisseIntl-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Suisse Intl";
+    src: url("../fonts/hinted-SuisseIntl-BlackItalic.woff2") format("woff2"),
+      url("../fonts/hinted-SuisseIntl-BlackItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Suisse Intl";
+    src: url("../fonts/hinted-SuisseIntl-BoldItalic.woff2") format("woff2"),
+      url("../fonts/hinted-SuisseIntl-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Suisse Intl Book";
+    src: url("../fonts/hinted-SuisseIntl-Book.woff2") format("woff2"),
+      url("../fonts/hinted-SuisseIntl-Book.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Suisse Intl Book";
+    src: url("../fonts/hinted-SuisseIntl-BookItalic.woff2") format("woff2"),
+      url("../fonts/hinted-SuisseIntl-BookItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Suisse Intl";
+    src: url("../fonts/hinted-SuisseIntl-Medium.woff2") format("woff2"),
+      url("../fonts/hinted-SuisseIntl-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Suisse Intl";
+    src: url("../fonts/hinted-SuisseIntl-LightItalic.woff2") format("woff2"),
+      url("../fonts/hinted-SuisseIntl-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Suisse Intl";
+    src: url("../fonts/hinted-SuisseIntl-Light.woff2") format("woff2"),
+      url("../fonts/hinted-SuisseIntl-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Suisse Intl";
+    src: url("../fonts/hinted-SuisseIntl-MediumItalic.woff2") format("woff2"),
+      url("../fonts/hinted-SuisseIntl-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Suisse Intl";
+    src: url("../fonts/hinted-SuisseIntl-Italic.woff2") format("woff2"),
+      url("../fonts/hinted-SuisseIntl-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Suisse Intl";
+    src: url("../fonts/hinted-SuisseIntl-Regular.woff2") format("woff2"),
+      url("../fonts/hinted-SuisseIntl-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Suisse Intl Semi";
+    src: url("../fonts/hinted-SuisseIntl-SemiBoldItalic.woff2") format("woff2"),
+      url("../fonts/hinted-SuisseIntl-SemiBoldItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Suisse Intl";
+    src: url("../fonts/hinted-SuisseIntl-Thin.woff2") format("woff2"),
+      url("../fonts/hinted-SuisseIntl-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Suisse Intl Semi";
+    src: url("../fonts/hinted-SuisseIntl-SemiBold.woff2") format("woff2"),
+      url("../fonts/hinted-SuisseIntl-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Suisse Intl";
+    src: url("../fonts/hinted-SuisseIntl-ThinItalic.woff2") format("woff2"),
+      url("../fonts/hinted-SuisseIntl-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Suisse Intl";
+    src: url("../fonts/hinted-SuisseIntl-UltraLight.woff2") format("woff2"),
+      url("../fonts/hinted-SuisseIntl-UltraLight.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "Suisse Intl";
+    src: url("../fonts/hinted-SuisseIntl-UltraLightItalic.woff2") format("woff2"),
+      url("../fonts/hinted-SuisseIntl-UltraLightItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+  }
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -122,6 +293,7 @@ input, button, textarea, select {
 
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+    font-weight: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -132,7 +304,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ---------------------------------------------------------- */
 
 body {
-    font-family: var(--font-sans);
+    font-family: var(--font-body);
     font-size: 1.6rem;
     background-color: var(--background-color);
     color: var(--color-primary-text);
@@ -415,7 +587,7 @@ button.gh-form-input {
 .gh-navigation {
     height: 100px;
     font-size: 1.5rem;
-    font-weight: 550;
+    font-weight: normal;
     background-color: var(--background-color);
     color: var(--color-darker-gray);
 }
@@ -439,7 +611,7 @@ button.gh-form-input {
 .gh-navigation-logo {
     position: relative;
     font-size: calc(2.4rem * var(--factor, 1));
-    font-weight: 725;
+    font-weight: normal;
     letter-spacing: -0.015em;
     white-space: nowrap;
 }
@@ -930,7 +1102,7 @@ Search                         LOGO                    Login Subscribe
 
 .gh-card-title {
     font-size: calc(1.9rem * var(--factor, 1));
-    font-weight: 725;
+    font-weight: normal;
     letter-spacing: -0.014em;
     line-height: 1.3;
 }
@@ -1957,10 +2129,29 @@ Search                         LOGO                    Login Subscribe
     --container-width: 1120px;
 
     word-break: break-word;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .gh-article-header {
     margin: clamp(40px, 3.64vw + 25.45px, 72px) 0 40px;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .gh-article-header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gh-article-header > * {
+        flex: 1 1 50%; /* Make each child element take up 50% of the width */
+        box-sizing: border-box; /* Ensure padding and border are included in the width and height calculations */
+    }
+
+    .gh-article-image {
+        grid-column: wide;
+        margin-top: 0px !important;
+    }
 }
 
 .gh-article-tag {
@@ -1973,7 +2164,7 @@ Search                         LOGO                    Login Subscribe
 }
 
 .gh-article-title {
-    font-size: calc(clamp(3.4rem, 1.36vw + 2.85rem, 4.6rem) * var(--factor, 1));
+    font-size: 15vw;
     line-height: 1.1;
     letter-spacing: -0.022em;
 }
@@ -2087,8 +2278,16 @@ created within the Ghost editor. The main content handles
 headings, text, images and lists. We deal with cards lower down. */
 
 .gh-content {
-    font-size: var(--content-font-size, 1.7rem);
+    font-size: var(--content-font-size, 1.8rem);
     letter-spacing: -0.01em;
+}
+
+@media (min-width: 768px) {
+    .gh-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 700px;
+    }
 }
 
 /* Default vertical spacing */
@@ -2172,7 +2371,7 @@ unless a heading is the very first element in the post content */
 .has-serif-body .gh-content .kg-toggle-content > ol,
 .has-serif-body .gh-content .kg-toggle-content > ul,
 .has-serif-body .gh-content .kg-toggle-content > p {
-    font-family: var(--font-serif-alt);
+    font-family: var(--font-body);
 }
 
 .gh-content :is(ul, ol) {
@@ -2365,7 +2564,7 @@ blockquote.kg-blockquote-alt {
 }
 
 .has-serif-body .kg-header-card h3.kg-header-card-subheader {
-    font-family: var(--font-serif);
+    font-family: var(--font-body);
 }
 
 /* Bookmark */
@@ -2426,7 +2625,7 @@ blockquote.kg-blockquote-alt {
 }
 
 .has-serif-body .kg-product-card-description :is(p, ul, ol) {
-    font-family: var(--font-serif-alt);
+    font-family: var(--font-body);
 }
 
 /* File */
@@ -2605,8 +2804,9 @@ figcaption a {
     --factor: 1.1;
 }
 
-.has-sans-title :is(.is-title, .gh-content :is(h2, h3)) {
-    font-family: var(--font-sans);
+.is-title {
+    font-family: var(--font-display);
+    text-transform: uppercase;
 }
 
 .has-serif-title :is(.is-title, .gh-content :is(h2, h3)) {
@@ -2619,11 +2819,11 @@ figcaption a {
 }
 
 .has-sans-body .is-body {
-    font-family: var(--font-sans);
+    font-family: var(--font-body);
 }
 
 .has-serif-body .is-body {
-    font-family: var(--font-serif-alt);
+    font-family: var(--font-body);
 }
 
 .has-serif-title .gh-header.is-classic .gh-header-title {
@@ -2693,7 +2893,7 @@ figcaption a {
 
 .has-serif-title .gh-header.is-magazine .gh-header-inner>.gh-card .gh-card-title,
 .has-serif-title .gh-header.is-highlight .gh-header-left .gh-card-title {
-    font-weight: 550;
+    font-weight: normal;
     font-size: clamp(3.2rem,1.82vw + 2.47rem,4.9rem)
 }
 
@@ -2769,7 +2969,7 @@ figcaption a {
 .gh-footer-logo {
     position: relative;
     font-size: calc(2.4rem * var(--factor, 1));
-    font-weight: 725;
+    font-weight: normal;
     letter-spacing: -0.015em;
     white-space: nowrap;
 }
@@ -2809,7 +3009,7 @@ figcaption a {
 
 .gh-footer-signup-header {
     font-size: calc(clamp(2.8rem,1.36vw + 2.25rem,4rem) * var(--factor, 1));
-    font-weight: 700;
+    font-weight: normal;
     letter-spacing: -0.03em;
 }
 
